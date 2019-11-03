@@ -2,4 +2,5 @@ version: "2.1"
 services:
   cli:
     environment:
-      - COMPOSER_MEMORY_LIMIT=-1
+      - COMPOSER_MEMORY_LIMIT
+      - SITE_NAME
