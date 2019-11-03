@@ -1,1 +1,5 @@
 version: "2.1"
+services:
+  cli:
+    environment:
+      - COMPOSER_MEMORY_LIMIT=-1
