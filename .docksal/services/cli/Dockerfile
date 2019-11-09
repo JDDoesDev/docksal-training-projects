@@ -2,6 +2,8 @@ FROM docksal/cli:2.9-php7.3
 
 USER docker
 
+SHELL ["/bin/bash", "-c"]
+
 # Install additional global npm dependencies
 RUN set -e; \
   # Initialize the user environment (this loads nvm)
@@ -17,5 +19,7 @@ RUN set -e; \
   nvm clear-cache && npm cache clear --force; \
   # Fix npm complaining about permissions and not being able to update
   sudo rm -rf $HOME/.config
+
+SHELL ["/bin/sh", "-c"]
 
 USER root
