@@ -1,6 +1,8 @@
 version: "2.1"
 services:
   cli:
+    image: ${COMPOSE_PROJECT_NAME_SAFE}_cli
+    build: ${PROJECT_ROOT}/.docksal/services/cli
     environment:
       - COMPOSER_MEMORY_LIMIT
       - SITE_NAME
