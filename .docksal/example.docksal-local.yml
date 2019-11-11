@@ -1,0 +1,6 @@
+## To test the codebase against PHP 7.3, copy this file to docksal-local.yml and
+## restart your project.
+version: "2.1"
+services:
+  cli:
+    image: "docksal/cli:2.9-php7.3"
