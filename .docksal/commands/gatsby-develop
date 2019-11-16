@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-container_user="-u docker" fin exec --in=gatsby bash -lc "gatsby develop"
